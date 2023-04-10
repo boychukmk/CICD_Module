@@ -27,5 +27,5 @@ def read_file(file_name, nameprod):
             price_change = end_price - start_price
             return price_change # "Ціна {nameprod} змінилась на {price_change:.2f} за місяць."
         else:
-            return 0 #"нема інформації про  {nameprod} ."
+            return False #"нема інформації про  {nameprod} ."
 #print(read_file("items1.txt", "Яблуко"))
